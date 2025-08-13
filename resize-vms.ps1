@@ -9,7 +9,7 @@ $path4 = "c:\temp\vcenter\onoff.txt"
 $vcenterserver = ""
 $user = ""
 Get-Module -ListAvailable *vmware* | Import-Module
-asnp vmware*
+Add-PSSnapIn vmware*
 Connect-VIServer -Server $vcenterserver -User $user
 
         $list = (Get-Content -path $path4) 
